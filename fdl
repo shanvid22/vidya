@@ -1,0 +1,13 @@
+#!/bin/bash
+echo "enter the name"
+read value
+if [ -f $value ]
+then 
+echo "$value is a file"
+elif [ -d $value ]
+echo "$value is a directory"
+elif [ -l $value ]
+echo "$value is a linkedfile"
+else
+echo "No such files or directory"
+if
